@@ -661,7 +661,9 @@ main(int argc, char *argv[])
 		else if (!strcmp(argv[i], "-c")) { /* case-sensitive item matching */
 			fstrncmp = strncmp;
 			fstrstr = strstr;
-		} else if (i + 1 == argc)
+		} else if (!strcmp(argv[i], "-i")) /* case-insensitive item matching (deprecated) */
+			puts("this build of dmenu is case-insensitive by default");
+		else if (i + 1 == argc)
 			usage();
 		/* these options take one argument */
 		else if (!strcmp(argv[i], "-l"))   /* number of lines in vertical list */
