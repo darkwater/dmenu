@@ -604,7 +604,7 @@ setup(void)
 		x = (wa.width - mw) / 2;
 		y = topbar ? 0 : wa.height - mh;
 	}
-	promptw = (prompt && *prompt) ? TEXTW(prompt) - lrpad / 4 : 0;
+	promptw = (prompt && *prompt) ? TEXTW(prompt) : 0;
 	inputw = MIN(inputw, mw/3);
 	match();
 
