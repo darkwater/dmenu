@@ -36,7 +36,6 @@ struct item {
 static char text[BUFSIZ] = "";
 static char *embed;
 static int mw, mh;
-static unsigned int dmw; /* dmenu width */
 static int inputw = 0, promptw;
 static int lrpad; /* sum of left and right padding */
 static size_t cursor;
